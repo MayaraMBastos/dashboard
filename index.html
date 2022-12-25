@@ -18,6 +18,17 @@
         this.classList.add("hovered");
       }
       list.forEach((item) => item.addEventListener("mouseover", ativaLink));
+
+//Main Mudar
+
+let mudar= document.querySelector(".mudar");
+let navegador= document.querySelector(".navegador");
+let main= document.querySelector(".main");
+
+mudar.onClick = function(){
+    navegador.classList.mudar('ativo')
+}
+
     </script>
 
     <div class="conteiner">
