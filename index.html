@@ -28,56 +28,70 @@
           <li>
             <a href="#">
               <span class="icone">
-                <img src="./svgs/home.svg" alt="" class="dashSvg"
-              />
-            </span>
+                <img src="./svgs/home.svg" alt="" class="dashSvg" />
+              </span>
               <span class="titulo">Dashboard</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="icone"><img src="./svgs/clientes.svg" alt="" class="clientesSvg"
-                /></span>
+              <span class="icone"
+                ><img src="./svgs/clientes.svg" alt="" class="clientesSvg"
+              /></span>
               <span class="titulo">Clientes</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="icone"><img src="./svgs/mensagens.svg" alt="" class="msgSvg"
-                /></span>
+              <span class="icone"
+                ><img src="./svgs/mensagens.svg" alt="" class="msgSvg"
+              /></span>
               <span class="titulo">Mensagens</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="icone"><img src="./svgs/ajuda.svg" alt="" class="ajudaSvg"
-                /></span>
+              <span class="icone"
+                ><img src="./svgs/ajuda.svg" alt="" class="ajudaSvg"
+              /></span>
               <span class="titulo">Ajuda</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="icone"><img src="./svgs/configuracoes.svg" alt="" class="configSvg"
-                /></span>
+              <span class="icone"
+                ><img src="./svgs/configuracoes.svg" alt="" class="configSvg"
+              /></span>
               <span class="titulo">Configurações</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="icone"><img src="./svgs/senha.svg" alt="" class="senhaSvg"
-                /></span>
+              <span class="icone"
+                ><img src="./svgs/senha.svg" alt="" class="senhaSvg"
+              /></span>
               <span class="titulo">Senha</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="icone"><img src="./svgs/sign-out.svg" alt="" class="singOutSvg"
-                /></span>
+              <span class="icone"
+                ><img src="./svgs/sign-out.svg" alt="" class="singOutSvg"
+              /></span>
               <span class="titulo">Sign Out</span>
             </a>
           </li>
         </ul>
       </div>
     </div>
+    <script>
+      //muda o nome da classe do li para hovered
+      let list = document.querySelectorAll(".navegador li");
+      function ativaLink() {
+        list.forEach((item) => item.classList.remove("hovered"));
+        this.classList.add("hovered");
+      }
+      list.forEach((item) => item.addEventListener("mouseover", ativaLink));
+    </script>
   </body>
 </html>
