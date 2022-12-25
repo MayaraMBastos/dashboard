@@ -35,7 +35,39 @@ body{
     overflow: hidden;
 }
 
+.navegador ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navegador ul li{
+    position: relative;
+    width: 200%;
+    list-style: none;
+}
+.navegador ul li:hover{ /*hover muda a cor quando o mouse passa por cima*/
+    background: var(--branco); 
+
+}
+
+.navegador ul li:nth-child(1){ /*seleciona elementos com base em suas posições em um grupo de elementos irmãos*/
+    margin-bottom: 40px;
+    pointer-events: none; /*retira o evento de hover neste li*/
+}
+
+.navegador ul li a{
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: var(--branco);
+
+}
+
 span img {
     width: 20px;
     height: 20px;
+   
   }
