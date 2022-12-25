@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&family=Ubuntu:wght@300;400;500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root{
+    --verde-escuro: #4da84d;
+    --branco:#ffffff;
+    --cinza: #f5f5f5;
+    --preto1: #222;
+    --cinza2: #999;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden; /* corta o conteúdo se passar das bordas*/
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.navegador{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: var(--verde-escuro);
+    border-left: 10px solid var(--verde-escuro);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+span img {
+    width: 20px;
+    height: 20px;
+  }
