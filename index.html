@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <script>
+      //muda o nome da classe do li para hovered
+      let list = document.querySelectorAll(".navegador li");
+      function ativaLink() {
+        list.forEach((item) => item.classList.remove("hovered"));
+        this.classList.add("hovered");
+      }
+      list.forEach((item) => item.addEventListener("mouseover", ativaLink));
+    </script>
+
     <div class="conteiner">
       <div class="navegador">
         <ul>
@@ -83,15 +93,28 @@
           </li>
         </ul>
       </div>
+
+      <!--Main-->
+
+      <div class="main">
+        <div class="barraTopo">
+          <div class="mudar">
+            <img src="./svgs/menu.svg" alt="" />
+          </div>
+          <!--Campo de busca-->
+          <div class="busca">
+            <label>
+              <input
+                type="text"
+                name="busca"
+                id="campoBusca"
+                placeholder="Busca"
+              />
+              <img src="./svgs/busca.svg" alt="" />
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
-    <script>
-      //muda o nome da classe do li para hovered
-      let list = document.querySelectorAll(".navegador li");
-      function ativaLink() {
-        list.forEach((item) => item.classList.remove("hovered"));
-        this.classList.add("hovered");
-      }
-      list.forEach((item) => item.addEventListener("mouseover", ativaLink));
-    </script>
   </body>
 </html>
