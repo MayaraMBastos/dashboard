@@ -1,4 +1,6 @@
-<!-- Referencia: https://www.youtube.com/watch?v=nUUsUAPEjFc-->
+<!-- Referencia: https://www.youtube.com/watch?v=nUUsUAPEjFc
+parei 29:00
+-->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -10,27 +12,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <script>
-      //muda o nome da classe do li para hovered
-      let list = document.querySelectorAll(".navegador li");
-      function ativaLink() {
-        list.forEach((item) => item.classList.remove("hovered"));
-        this.classList.add("hovered");
-      }
-      list.forEach((item) => item.addEventListener("mouseover", ativaLink));
-
-//Main Mudar
-
-let mudar= document.querySelector(".mudar");
-let navegador= document.querySelector(".navegador");
-let main= document.querySelector(".main");
-
-mudar.onClick = function(){
-    navegador.classList.mudar('ativo')
-}
-
-    </script>
-
+    
     <div class="conteiner">
       <div class="navegador">
         <ul>
@@ -109,7 +91,7 @@ mudar.onClick = function(){
 
       <div class="main">
         <div class="barraTopo">
-          <div class="mudar">
+          <div class="toggle">
             <img src="./svgs/menu.svg" alt="" />
           </div>
           <!--Campo de busca-->
@@ -131,5 +113,6 @@ mudar.onClick = function(){
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="./arquivo.js"></script>
   </body>
 </html>
