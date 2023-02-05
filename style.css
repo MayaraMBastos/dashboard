@@ -25,7 +25,7 @@ body {
   width: 100%;
 }
 
-.navegador {
+#navegador {
   position: fixed;
   width: 300px;
   height: 100%;
@@ -35,37 +35,36 @@ body {
   overflow: hidden;
 }
 
-.navegador.ativo{
+#navegador.ativo{
   width: 70px;
 }
 
-.navegador ul {
+#navegador ul {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-.navegador ul li {
+#navegador ul li {
   position: relative;
   width: 100%;
   list-style: none;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-.navegador ul li:hover,
-.navegador ul li.hovered {
+#navegador ul li:hover{
   /*hover muda a cor quando o mouse passa por cima*/
   background: var(--branco);
 }
 
-.navegador ul li:nth-child(1) {
+#navegador ul li:nth-child(1) {
   /*seleciona elementos com base em suas posições em um grupo de elementos irmãos*/
   margin-bottom: 40px;
   pointer-events: none; /*retira o evento de hover neste li*/
 }
 
-.navegador ul li a {
+#navegador ul li a {
   position: relative;
   display: flex;
   width: 100%;
@@ -73,12 +72,11 @@ body {
   color: var(--branco);
 }
 
-.navegador ul li:hover a,
-.navegador ul li.hovered a {
+#navegador ul li:hover a {
   color: var(--verde-escuro);
 }
 
-.navegador ul li a .icone {
+#navegador ul li a .icone {
   position: relative;
   display: block;
   min-width: 60px;
@@ -87,11 +85,11 @@ body {
   text-align: center;
 }
 
-/*.navegador ul li a .icone span{
+/*#navegador ul li a .icone span{
     font-size: 1.75em;
 }*/
 
-.navegador ul li a .titulo {
+#navegador ul li a .titulo {
   position: relative;
   display: block;
   padding: 0 10px;
@@ -101,8 +99,8 @@ body {
   white-space: nowrap; /*espaços em branco dentro dos elementos , quebra a linha*/
 }
 
-.navegador ul li:hover a::before,
-.navegador ul li.hovered a::before {
+#navegador ul li:hover a::before,
+#navegador ul li.hovered a::before {
   /*borda interna arredondada*/
   content: "";
   position: absolute;
@@ -116,8 +114,8 @@ body {
   pointer-events: none;
 }
 
-.navegador ul li:hover a::after,
-.navegador ul li.hovered a::after {
+#navegador ul li:hover a::after,
+#navegador ul li.hovered a::after {
   /*borda interna arredondada*/
   content: "";
   position: absolute;
@@ -132,7 +130,7 @@ body {
 }
 
 span img,
-.toggle img {
+.menu img {
   width: 30px;
   height: 30px;
 }
@@ -162,7 +160,7 @@ span img,
   padding: 0 10px;
 }
 
-.toggle {
+.menu {
   position: relative;
   width: 60px;
   height: 60px;
