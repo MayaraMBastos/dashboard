@@ -133,7 +133,8 @@ body {
 }
 
 span img,
-.menu img {
+.menu img,
+.caixaIcones img {
   width: 30px;
   height: 30px;
 }
@@ -219,4 +220,31 @@ span img,
     width: 100%;
     height: 100%;
     object-fit: cover;/* elemento  ajustado à caixa estabelecida pela altura e largura usadas*/
+}
+
+.caixaCards{
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+}
+
+.caixaCards .card{
+  position: relative;
+  background: var(--branco);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.caixaCards .card .numeros{
+  position: relative;
+  font-weight: 500;
+  font-size: 2em;
+  color: var(--verde-escuro);
 }
