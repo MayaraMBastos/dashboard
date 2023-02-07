@@ -75,6 +75,9 @@ body {
 #navegador ul li:hover a {
   color: var(--verde-escuro);
 }
+#navegador ul li:hover img {
+  filter: invert(1)
+}
 
 #navegador ul li a .icone {
   position: relative;
