@@ -35,7 +35,7 @@ body {
   overflow: hidden;
 }
 
-#navegador.ativo{
+#navegador.ativo {
   width: 70px;
 }
 
@@ -53,7 +53,7 @@ body {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-#navegador ul li:hover{
+#navegador ul li:hover {
   /*hover muda a cor quando o mouse passa por cima*/
   background: var(--branco);
 }
@@ -76,7 +76,7 @@ body {
   color: var(--verde-escuro);
 }
 #navegador ul li:hover img {
-  filter: invert(1)
+  filter: invert(1);
 }
 
 #navegador ul li a .icone {
@@ -133,8 +133,7 @@ body {
 }
 
 span img,
-.menu img
- {
+.menu img {
   width: 30px;
   height: 30px;
 }
@@ -175,63 +174,62 @@ span img,
   cursor: pointer; /*especifica o cursor do mouse como maozinha*/
 }
 
-.busca{
-    position: relative;
-    width: 400px;
-    margin: 0 10px;
+.busca {
+  position: relative;
+  width: 400px;
+  margin: 0 10px;
 }
 
-.busca label{
-    position: relative;
-    width: 100%;
+.busca label {
+  position: relative;
+  width: 100%;
 }
 
-.busca label input{
-    width: 100%;
-    height: 40px;
-    border-radius: 40px;
-    padding: 5px 20px 5px 35px;
-    outline: none;
-    font-size: 18px;
-    border: 1px solid var(--cinza2);
+.busca label input {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px 20px 5px 35px;
+  outline: none;
+  font-size: 18px;
+  border: 1px solid var(--cinza2);
 }
 
-.busca label img{
-    position: absolute;
-    top: 0;
-    left: 10px;
-    font-size: 1.2em;
-
+.busca label img {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 1.2em;
 }
 
-.user{
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    overflow: hidden; /*O conteúdo é cortado e nenhuma barra de rolagem é exibida.*/
-    cursor: pointer;
+.user {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden; /*O conteúdo é cortado e nenhuma barra de rolagem é exibida.*/
+  cursor: pointer;
 }
 
-.user img{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;/* elemento  ajustado à caixa estabelecida pela altura e largura usadas*/
+.user img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* elemento  ajustado à caixa estabelecida pela altura e largura usadas*/
 }
 
-.caixaCards{
+.caixaCards {
   position: relative;
   width: 100%;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
-.caixaCards .card{
+.caixaCards .card {
   position: relative;
   background: var(--branco);
   padding: 30px;
@@ -242,19 +240,48 @@ span img,
   cursor: pointer;
 }
 
-.caixaCards .card .numeros{
+.caixaCards .card .numeros {
   position: relative;
   font-weight: 500;
   font-size: 2em;
   color: var(--verde-escuro);
 }
 
-.caixaCards .card .nomeCard{
+.caixaCards .card .nomeCard {
   color: var(--cinza2);
   font-size: 1em;
   margin-top: 8px;
 }
-.caixaCards .card .caixaIcones{
- font-size: 1.2em;
- color: var(--cinza2);
+.caixaCards .card .caixaIcones {
+  color: var(--cinza2);
+}
+
+.caixaCards .card .caixaIcones img {
+  width: 40px;
+  height: 40px;
+}
+
+.caixaCards .card:hover {
+  background: var(--verde-escuro);
+}
+
+.caixaCards .card:hover .numeros,
+.caixaCards .card:hover .nomeCard,
+.caixaCards .card:hover .caixaIcones,
+.caixaCards .card:hover .caixaIcones img {
+  color: var(--branco);
+}
+
+.detalhes{
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.detalhes .comprasRecentes{
+  
 }
