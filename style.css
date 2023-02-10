@@ -133,8 +133,8 @@ body {
 }
 
 span img,
-.menu img,
-.caixaIcones img {
+.menu img
+ {
   width: 30px;
   height: 30px;
 }
@@ -247,4 +247,14 @@ span img,
   font-weight: 500;
   font-size: 2em;
   color: var(--verde-escuro);
+}
+
+.caixaCards .card .nomeCard{
+  color: var(--cinza2);
+  font-size: 1em;
+  margin-top: 8px;
+}
+.caixaCards .card .caixaIcones{
+ font-size: 1.2em;
+ color: var(--cinza2);
 }
