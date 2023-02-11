@@ -16,3 +16,4 @@ function menuResponsivo(){
   }
 }
 
+//problema esta na classe ativo que esta sempre adicionada mesmo q o evento nao tenha sido disparado
