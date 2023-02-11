@@ -8,6 +8,7 @@ function menuResponsivo(){
     estadoMenu = 0;
   } else if (estadoMenu == 0) {
     document.getElementById("navegador").style.width = "80px";
+    document.getElementById("navegador").classList.add("ativo")
     document.querySelector("div.main").style.left = "80px";
     document.querySelector("div.main").style.width = "calc(100% - 80px)";
     estadoMenu = 1;

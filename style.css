@@ -16,7 +16,7 @@
   --entregue: #8de02c;
   --pendente: rgb(139, 133, 48);
   --devolvido: #f00;
-  --progresso:rgb(103, 103, 221);
+  --progresso: rgb(103, 103, 221);
 }
 
 body {
@@ -284,7 +284,6 @@ span img,
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 30px;
-  
 }
 
 .detalhes .comprasRecentes {
@@ -297,18 +296,18 @@ span img,
   border-radius: 20px;
 }
 
-.caixaTopo{
+.caixaTopo {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.caixaTopo h2{
+.caixaTopo h2 {
   font-weight: 600;
   color: var(--verde-escuro);
 }
 
-.btn{
+.btn {
   position: relative;
   padding: 5px 10px;
   background: var(--verde-escuro);
@@ -317,105 +316,140 @@ span img,
   border-radius: 10px;
 }
 
-.detalhes table{
+.detalhes table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
 }
 
-.detalhes table thead td{
+.detalhes table thead td {
   font-weight: 600;
 }
 
-.detalhes .comprasRecentes table tr{
-color: var(--preto1);
-border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.detalhes .comprasRecentes table tr {
+  color: var(--preto1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.detalhes .comprasRecentes table tr:last-child{
+.detalhes .comprasRecentes table tr:last-child {
   border-bottom: none;
 }
 
-.detalhes .comprasRecentes table tbody tr:hover{
+.detalhes .comprasRecentes table tbody tr:hover {
   background: var(--verde-escuro);
   color: var(--branco);
 }
 
-.detalhes .comprasRecentes table tr td{
+.detalhes .comprasRecentes table tr td {
   padding: 10px;
 }
 
-.detalhes .comprasRecentes table tr td:last-child{
+.detalhes .comprasRecentes table tr td:last-child {
   text-align: end;
 }
 
-.detalhes .comprasRecentes table tr td:nth-child(2){
+.detalhes .comprasRecentes table tr td:nth-child(2) {
   text-align: end;
 }
 
-.detalhes .comprasRecentes table tr td:nth-child(3){
+.detalhes .comprasRecentes table tr td:nth-child(3) {
   text-align: center;
 }
 
-.situacao.entregue{
-padding: 2px 4px;
-background: var(--entregue);
-color: var(--branco);
-border-radius: 4px;
-font-size: 14px;
-font-weight: 500;
+.situacao.entregue {
+  padding: 2px 4px;
+  background: var(--entregue);
+  color: var(--branco);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.situacao.pendente{
+.situacao.pendente {
   padding: 2px 4px;
   background: var(--pendente);
   color: var(--branco);
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
+}
+
+.situacao.devolvido {
+  padding: 2px 4px;
+  background: var(--devolvido);
+  color: var(--branco);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.situacao.progresso {
+  padding: 2px 4px;
+  background: var(--progresso);
+  color: var(--branco);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.clienteNovos {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  background: var(--branco);
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+.clienteNovos .caixaImg {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.clienteNovos .caixaImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clienteNovos table tr td {
+  padding: 12px 10px;
+}
+
+.clienteNovos table tr td h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+.clienteNovos table tr td h4 span {
+  font-size: 14px;
+  color: var(--cinza2);
+}
+
+.clienteNovos table tr:hover {
+  background: var(--verde-escuro);
+  color: var(--branco);
+}
+
+.clienteNovos table tr:hover td h4 span {
+  color: var(--branco);
+}
+
+@media (max-width: 991px){
+  #navegador{
+    left: 0px;
+    width: 80px;
   }
-
-  .situacao.devolvido{
-    padding: 2px 4px;
-    background: var(--devolvido);
-    color: var(--branco);
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
-    }
-
-    .situacao.progresso{
-      padding: 2px 4px;
-      background: var(--progresso);
-      color: var(--branco);
-      border-radius: 4px;
-      font-size: 14px;
-      font-weight: 500;
-      }
-
-      .clienteNovos{
-        position: relative;
-        display: grid;
-        min-height: 500px;
-        background: var(--branco);
-        padding: 20px;
-        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-        border-radius: 20px;
-      }
-
-      .clienteNovos .caixaImg{
-        position: relative;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        overflow: hidden;
-      }
-
-      .clienteNovos .caixaImg img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+  .main{
+    width: 100%;
+    left: 80px;
+  }
+}
