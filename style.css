@@ -451,11 +451,11 @@ span img,
 
   .navegador.ativo{
     width: 300px;
-    left: 0px;
+    left: 0;
   }
   .main{
     width: 100%;
-    left: 0px;
+    left: 0;
   }
 
   .main.ativo{
@@ -469,4 +469,14 @@ span img,
 
 @media (max-width: 768px){
 
+  .detalhes{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .comprasRecentes{
+    overflow-x: auto;
+  }
+.situacao.progresso{
+  white-space: nowrap;
+}
 }
