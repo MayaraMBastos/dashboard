@@ -454,12 +454,12 @@ span img,
     left: 0;
   }
   .main {
-    width: 100%;
-    left: 0;
+    width: 100% !important;
+    left: 0 !important;
   }
 
   .main.ativo {
-    left: 300px;
+    left: 80px !important;
   }
 
   .caixaCards {
