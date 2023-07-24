@@ -492,6 +492,11 @@ a {
   color: var(--branco);
 }
 
+.grafico{
+  width: 500px;
+  height: 500px;
+}
+
 /*RESPONSIVIDADE*/
 @media (max-width: 991px) {
   .navegador {

@@ -1,0 +1,176 @@
+<!-- Referencia: https://www.youtube.com/watch?v=nUUsUAPEjFc
+parei 1:01:16
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Graficos</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="navegador">
+        <ul>
+          <li>
+            <a href="https://github.com/MayaraMBastos">
+              <span class="icone">
+                <img
+                  src="./svgs/logo-github.svg"
+                  alt="logo da marca"
+                  class="logoSvg"
+                />
+              </span>
+              <span class="titulo">NomeAplicativo</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <span class="icone">
+                <img src="./svgs/home.svg" alt="" class="dashSvg" />
+              </span>
+              <span class="titulo">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icone"
+                ><img src="./svgs/clientes.svg" alt="" class="clientesSvg"
+              /></span>
+              <span class="titulo">Dispositivos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icone"
+                ><img src="./svgs/mensagens.svg" alt="" class="msgSvg"
+              /></span>
+              <span class="titulo">Gráficos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icone"
+                ><img src="./svgs/ajuda.svg" alt="" class="ajudaSvg"
+              /></span>
+              <span class="titulo">Ajuda</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icone"
+                ><img src="./svgs/configuracoes.svg" alt="" class="configSvg"
+              /></span>
+              <span class="titulo">Configurações</span>
+            </a>
+          </li>
+         
+          <li>
+            <a href="#">
+              <span class="icone"
+                ><img src="./svgs/sign-out.svg" alt="" class="singOutSvg"
+              /></span>
+              <span class="titulo">Sair</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!--Main-->
+
+      <div class="main">
+        <div class="barraTopo">
+          <div class="menu" onclick="menuResponsivo()">
+            <img src="./svgs/menu.svg" alt="" />
+          </div>
+          <!--Campo de busca-->
+          <div class="busca">
+            <label>
+              <input
+                type="text"
+                name="busca"
+                id="campoBusca"
+                placeholder="Busca"
+              />
+              <img src="./svgs/busca.svg" alt="" />
+            </label>
+          </div>
+          <!--Imagem do usuario-->
+          <div class="user">
+            <img src="./imagens/usuario.jpg" alt="Foto do usuario" />
+          </div>
+        </div>
+
+        <!--Cards do main-->
+        <div class="caixaCards">
+          <div class="card">
+            <div>
+              <div class="numeros">Add</div>
+              <div class="nomeCard">Dispositivo</div>
+            </div>
+            <div class="caixaIcones">
+              <img src="./svgs/mais.svg" alt="Icone adicionar" />
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numeros">Deletar</div>
+              <div class="nomeCard">Dispositivo</div>
+            </div>
+            <div class="caixaIcones">
+              <img src="./svgs/menos.svg" alt="Icone deletar" />
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numeros">345</div>
+              <div class="nomeCard">Comentários</div>
+            </div>
+            <div class="caixaIcones">
+              <img src="./svgs/comentarios.svg" alt="Icone vizualizar" />
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numeros">3000,00</div>
+              <div class="nomeCard">Ganhos</div>
+            </div>
+            <div class="caixaIcones">
+              <img src="./svgs/ganhos.svg" alt="Icone vizualizar" />
+            </div>
+          </div>
+        </div>
+
+        <div class="detalhes">
+            <canvas class="grafico" id="graficodiario"></canvas>
+            <script>
+                const ctx = document.getElementById('graficodiario');
+              
+                new Chart(ctx, {
+                  type: 'bar',
+                  data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                      label: '# of Votes',
+                      data: [12, 19, 3, 5, 2, 3],
+                      borderWidth: 1
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+              </script>
+        </div>
+       
+    <script type="text/javascript" src="./arquivo.js"></script>
+  </body>
+</html>
